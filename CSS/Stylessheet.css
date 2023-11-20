@@ -1,25 +1,28 @@
 /* css for sammen sidene*/
+
+
   /* overskrifter og tekster*/
 
-body{
+body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #f4f4f4;
     margin: 0;
     font-size: medium;
 }
 
-.main_heading{
+.main_heading {
     Text-align: center;
     font-size: 50px;
     font-family: "Times New Roman", Times, serif;
     color: black;
 }
 
-.text{
+.text { 
     text-align: center;
     padding: 0;
 }
-.medium_heading{
+
+.medium_heading {
     /* for underoverskrift (h2) */
     text-align: center;
     font-size: 25px;
@@ -74,7 +77,7 @@ body{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    width: 100%; /* Endret bredden til 100% for å dekke hele siden */
+    width: 100%; /* endret bredden for å få den til å dekke hele siden */
     padding: 12px 30px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -96,141 +99,6 @@ body{
     .dropdown:hover .dropdown-content {
     display: block;
     }
-
-/* kun css for forside index.html*/
-
-.forside{}
-
-
-.overlay {
-    position: relative; /* Gjør overskriftsdiven absolutt posisjonert i forhold til .forside */
-    width: 100%;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.7); /* Legg til en gjennomsiktig bakgrunn for bedre lesbarhet */
-    padding: 10px; /* Legg til padding for bedre utseende */
- }
-
-.forside img{
-     max-width: 100%;
-    height: 400px;
-    object-fit: cover;
-    width: 100vw;/* Bruker viewport width for å fylle hele bredden av visningen */
-    display: block;
-    margin: 10px auto;
- }
-
-
-/* kun for accesibility*/
-
-
-/* css kun for topical*/
-.text p {
-    margin: 5px 0; /* Juster avstanden mellom hver avsnitt */
-    }
-    
-    .text ul {
-    list-style: none;
-    padding: 0;
-    }
-    
-    .text li {
-    display: inline-block;
-    margin: 0 5px; /* Juster avstanden mellom hvert listeelement */
-    }
-    
-    .text li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 10px 0;
-    }
-    
-    .text a {
-    display: inline-block;
-    }
-
-/* Oslomet Studentforeninger for Pålogginginfo for logg inn og påmeldingsskjema for foreninger*/
-
-.container{ /* Styling for container elements with padding */
-    padding: 16px;
-    width: 50%; /* Set width and center the container */
-    margin: auto; 
-}
-
-input[type=text], input[type=password]{/* Full-width input fields */
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
-input[type=text]:focus, input[type=password]:focus{ /* Input focus styles */
-    background-color: #ddd;
-    outline: none;
-}
-
-hr{/* Overwrite default styles of hr */
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-}
-
-.registerbtn{ /* Styling for the submit/register button */
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 50%;
-    opacity: 0.9;
-    display: block; /* Legg til følgende regler for å sentrere knappen */
-    margin-left: auto;
-    margin-right: auto;
-
-    
-}
-.registerbtn:hover {
-    opacity: 1;
-}/* hvorfor denne her */
-
-a{ /* glemt passord*/ /* Styling for links */
-    color: rgb(30, 146, 255)
-}
-.signin{ /* styling for log inn delen*/
-    background-color: #f1f1f1;
-    text-align: center;
-}
-/* Styling for forgotten password link */
-.forgot-password {
-    color: blue; /* You can change the color as needed */
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
-/* Styling for image containers  for oslomet foreninger*/ 
-.column {
-    flex: 1; /* Fordeler plassen jevnt mellom kolonnene */
-    max-width: 33.33%;
-}
-
-.column img {
-    width: 100%; /* Sørger for at bildene tar 100% av bredden av kolonnen */
-    height: 100%; /* Beholder proporsjonene av bildet */
-    object-fit: cover; /* Skalerer bildet slik at det dekker hele området */
-    display: block; /* Fjerner ekstra mellomrom under bildene */
-}
-
-/* Clear floats after image containers for oslomet foreninger */
-.row {
-    display: flex;
-}
-
 
 /* Footer for  Kontakt info + kandidater*/
 .footer{
@@ -290,3 +158,173 @@ a{ /* glemt passord*/ /* Styling for links */
     .footer p {
     margin: 0;
     }
+
+/* kun css for forside index.html*/
+
+.overlay {
+    position: relative; /* Gjør overskriftsdiven absolutt posisjonert i forhold til .forside */
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7); /* Legg til en gjennomsiktig bakgrunn for bedre lesbarhet */
+    padding: 10px; /* Legg til padding for bedre utseende */
+ }
+
+.forside img{
+     max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    width: 100vw;/* Bruker viewport width for å fylle hele bredden av visningen */
+    display: block;
+    margin: 10px auto;
+ }
+
+
+/* kun for accesibility*/
+
+
+/* css kun for topical*/
+
+.text p {
+    margin: 5px 0; /* Juster avstanden mellom hver avsnitt */
+    }
+    
+    .text ul {
+    list-style: none;
+    padding: 0;
+    }
+    
+    .text li {
+    display: inline-block;
+    margin: 0 5px; /* Juster avstanden mellom hvert listeelement */
+    }
+    
+    .text li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+    }
+    
+    .text a {
+    display: inline-block;
+    }
+    
+    /* Styling for image descriptions */
+div.desc {
+    padding: 15px;
+    text-align: right;
+}
+
+/* Styling for image galleries */
+.gallery {
+    margin: 5px 0;
+    border: 1px solid #aeacac;
+    width: 180px;
+    margin-right: 20px; /* Juster dette for ønsket avstand mellom bilder og tekst */
+    display: flex; 
+    flex-direction: column;
+    align-items: center; /* Sentrer bildet horisontalt */
+    justify-content: center; /* Sentrer bildet vertikalt */ 
+}
+
+.gallery:hover {
+    border: 2px solid #422323;
+}
+
+.gallery img {
+    width: 100%; /* Sørger for at bildene tar 100% av bredden av kolonnen */
+    height: auto; /* Beholder posisjonene på bildet */
+}
+
+.container_topical { 
+    display: flex;
+    justify-content: center; 
+    
+
+}
+
+  
+/* Oslomet Studentforeninger for Pålogginginfo for logg inn og påmeldingsskjema for foreninger*/
+
+.container{ /* Styling for container elements with padding */
+    padding: 16px;
+    width: 50%; /* Set width and center the container */
+    margin: auto; 
+}
+
+input[type=text], input[type=password]{/* Full-width input fields */
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus{ /* Input focus styles */
+    background-color: #ddd;
+    outline: none;
+}
+
+hr{ /* Overwrite default styles for hr */
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn{ /* Styling for the submit/register button */
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    display: block; /* Legg til følgende regler for å sentrere knappen */
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}/* hvorfor denne her */
+
+a{ /* glemt passord*/ /* Styling for linker */
+    color: rgb(30, 146, 255)
+}
+.signin{ /* styling for log inn delen*/
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/* Styling for glemt passord link */
+.forgot-password {
+    color: blue; /* You can change the color as needed */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Styling for image containers  for oslomet foreninger*/ 
+.column {
+    flex: 1; /* Fordeler plassen jevnt mellom kolonnene */
+    max-width: 33.33%;
+}
+
+.column img {
+    width: 100%; /* Sørger for at bildene tar 100% av bredden av kolonnen */
+    height: 100%; /* Beholder proporsjonene av bildet */
+    object-fit: cover; /* Skalerer bildet slik at det dekker hele området */
+    display: block; /* Fjerner ekstra mellomrom under bildene */
+}
+
+/* Clear floats after image containers for oslomet foreninger */
+.row {
+    display: flex;
+}
+
