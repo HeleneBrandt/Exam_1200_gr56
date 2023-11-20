@@ -2,17 +2,17 @@
 <html lang="nb">
 <head>
     <meta charset="UTF-8">
-    <Meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Introduksjon</title>
+    <mta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- gjør at siden tilpasser seg skjermen må sjekke om den faktisk gjør dette -->
+        <title>Topical</title>
         <link rel="stylesheet" href="../CSS/Stylessheet.css"> 
 </head>
 <body>
     <header>
         <div class="navbar">
-            <a href="../index.html" id="introduksjon">Introduksjon</a> <!-- id-attributt for å gi en unik identifikasjon til hver lenke. -->
-            <a href="02Accessibility.html" id="accessibility">Accessibility</a>
-            <a href="03Topical.html" id="Topical">Topical </a>
-            <a href="04OsloMet.html" id="osloMet">Oslomet: Foreninger </a> <!-- se på om vi trenger id her-->
+            <a href="../index.html">Introduksjon</a> 
+            <a href="02Accessibility.html">Accessibility</a>
+            <a href="03Topical.html" >Topical </a>
+            <a href="04OsloMet.html">Oslomet: Foreninger </a> 
             <div class="dropdown">
                 <button class="dropDownButton">Kontakt oss </button>
                 <div class="dropdown-content">
@@ -25,7 +25,19 @@
         </div>   
     </header>
 
-    <h1 class="main_heading" id="Vesta">Vestalinnene</h1>
+
+    <h1 class="main_heading">Vestalinnene</h1>
+
+    <div class="container_topical">
+      <div class="gallery">
+        <a target="_blank" href="../Img/Templet.jpg">
+          <img
+            src="../Img/Templet.jpg" alt="Tempel" width="600" height="400"/>
+        </a>
+        <div class="desc"> Tempelet til Vesta, som ligger i Forum Romanum, Roma. </div>
+      </div>
+     </div>
+
     <p>
       Røyken fra den evige flammen brenner i tempelet til Gudinnen
       <a href="https://www.britannica.com/topic/Vesta-Roman-goddess">Vesta</a> i
@@ -50,18 +62,19 @@
       (Biggi, 2018)
     </p>
 
-    <div class="gallery">
-      <a target="blank" href="../img/Templet.jpg">
-        <img
-          src="../img/Templet.jpg"
-          alt="Forest"
-          width="600"
-          height="400"/>
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
+  
 
-    <h2 class="medium_heading" id="Vesta">Høy status</h2>
+    <h2 class="medium_heading" >Høy status</h2>
+
+    <div class="container_topical">
+      <div class="gallery"> <!-- Kode hentet fra W3Schhools link: -->
+        <a target="_blank" href="../Img/Vestal.JPG">
+            <img src="../Img/Vestal.JPG" alt="Vestalinne" width="600" height="400" />
+        </a>
+   <div class="desc"> En tegning av en Vestalinne  </div>
+        </div>
+        </div>
+
     <p class="text">
       Som de eneste prestinnene i Roma, var Vestalinnene høyt aktet i det
       <a href="https://snl.no/Romerriket"> romerske samfunnet. </a> De var de
@@ -80,26 +93,24 @@
       hadde i Roma, men også om hvor ille det kunne gå dersom Vestalinnene brøt
       sitt jomfruløfte. Sammen med den høye statusen, fulgte det nemlig også
       strenge regler. Vestalinnene måtte blant annet avlegge en ed på å være
-      <a href=""> kyske </a> i 30 år. Brøt de denne ville de bli hardt straffet.
+      <a href="https://snl.no/kysk"> kyske </a> i 30 år. Brøt de denne ville de bli hardt straffet.
       Unnlatelse av å ivareta sine plikter ble straffet med juling; brudd på
       kyskhetsløftet, ved levende begravelse (blodet til en vestalsk jomfru
       kunne ikke søles). (Britannica, 2023.)
     </p>
 
-    <div class="gallery"> <!-- Kode hentet fra -->
-      <a target="_blank" href="../img/marcus.jpg">
-        <img
-          src="../img/marcus.jpg"
-          alt="Northern Lights"
-          width="600"
-          height="400" />
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
+    <h2 class="medium_heading"> Historien om Licinia og Marcus Licinius Crassus </h2>
 
-    <h2 class="medium_heading" id="Vesta">
-      Historien om Licinia og Marcus Licinius Crassus
-    </h2>
+    <div class="container_topical">
+      <div class="gallery"> <!-- Kode hentet fra W3Schhools link: -->
+          <a target="_blank" href="../Img/marcus.jpg">
+            <img
+              src="../Img/marcus.jpg" alt="Marcus_Licinius_Crassus" width="600" height="400" />
+          </a>
+          <div class="desc"> En byste av politikkeren Marcus Licinius Crassus</div>
+        </div>
+        </div>
+
     <p class="text">
       Det var flere goder i å være en Vestalinnene, blant annet hadde de
       rettigheter og privilegier som ellers var utilgjengelig for andre kvinner
@@ -151,7 +162,7 @@
 
 
     <!--- fet for footer med kontakt info + kandidater-->
-    <div class="footer" id="footer">
+    <div class="footer" id="footer"> <!-- her bruker vi id må se om vi har det i styles-->
         <div id="footer_left">
             <h3> Selskapetsinformasjon og kontaktopplysninger</h3>
             <ul>
