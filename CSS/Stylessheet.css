@@ -221,7 +221,7 @@ a{ /* glemt passord*/ /* Styling for links */
 }
 
 /* Footer for  Kontakt info + kandidater*/
-.footer {
+.footer{
     bottom: 0;
     display: flex;
     background-color: #3081c4b8;
@@ -232,49 +232,49 @@ a{ /* glemt passord*/ /* Styling for links */
     justify-content: space-between; /* endre til center */
     align-items: center;
     align-content: center;
-    font-weight: bold
-}
-
-.footer_left{
+    font-weight: bold;
+    }
+    #footer_left {
     width: 33%;
     max-height: 100%;
     font-size: 16px;
-    text-align: left
-}
-
-.footer_center{
+    text-align: left;
+    }
+    
+    #footer_right {
+    width: 33%;
+    max-height: 100%;
+    text-align: right;
+    font-size: 16px;
+    }
+    
+    #footer_center {
     width: 20%;
     max-height: 100%;
     text-align: center;
     font-size: 16px;
-}
-
-.footer_right{
-    width: 33%;
-    max-height: 100%;
-    text-align: right;
-    font-size: 16px
-}
-
-.footer /* text*/ {
+    }
+    
+    /* footer text */
+    .footer {
     display: flex;
     flex-direction: row;
     justify-content: center; /* Endret fra space-between til center */
     align-items: center;
     text-align: center;
-}
-
-.footer p { /* for teksten i p i footer*/
-    margin: 0;
-}
-
-.footer ul {
+    }
+    
+    .footer ul {
     list-style: none;
     padding: 0;
-    margin: 5px 0
-}
-
-.footer li {
+    margin: 5px 0;
+    }
+    
+    .footer li {
     display: block;
     margin: 0 5px;
-}
+    }
+    
+    .footer p {
+    margin: 0;
+    }
