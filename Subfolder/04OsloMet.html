@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <Meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduksjon</title>
+        <link rel="stylesheet" href="../CSS/Stylessheet.css"> 
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../index.html" id="introduksjon">Introduksjon</a> <!-- id-attributt for å gi en unik identifikasjon til hver lenke. -->
+            <a href="02Accessibility.html" id="accessibility">Accessibility</a>
+            <a href="03Topical.html" id="Topical">Topical </a>
+            <a href="04OsloMet.html" id="osloMet">Oslomet: Foreninger </a> <!-- se på om vi trenger id her-->
+            <div class="dropdown">
+                <button class="dropbtn">Kontakt oss </button>
+                <div class="dropdown-content">
+                    <a href="#footer"> Kandiatnummer: 244</a>
+                    <a href="#footer"> Kandiatnummer: 249</a>
+                    <a href="#footer"> Kandiatnummer: 227</a>
+                    <a href="#footer"> Kandiatnummer: 287</a>
+                </div>
+            </div>
+        </div>   
+    </header>
+
+    <!--- Hovedseksjonen med overskrift, bilder og tekst og påmedeldingsskjema-->
+    <h1 class="main_heading">studentforeninger på Oslomet</h1> 
+    <div class="row">
+        <!-- Tre kolonner med bilder-->
+        <div class="column">
+            <img src="../images/forening1.jpg" alt="forening1" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="../img/Oslomet 2.jpeg" alt="Bildet av en av bygningene til OsloMet" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="../img/Oslomet 3.jpeg" alt="Foreningsdag på OsloMet" style="width:100%">
+        </div>
+    </div>
+
+    <!--Informasjonstekst om studentforeninger-->
+    <div>
+        <p>Å bli medlem av en studentforening er en måte å gjøre studietiden morsommere på. På OsloMet finner du et stort mangfold av foreninger som du kan bli medlem av. 
+            <br> Så enten du er interessert i gaming, mote, film, entreprenørskap eller noe helt annet, finner du en forening som passer deg.
+            <br> Her er er en kort presentasjon av månedens utvalgte foreninger: 
+        </p>
+    </div>
+
+    <div>
+        <h2 clas="medium_header"> Fashion Production</h2>
+        <p>Formålet med foreningen er å arrangere sosiale og faglige arrangementer for studenter på studiet mote og produksjon på OsloMet. Foreningen skal jobbe mot en avgangsvisning etter innlevert Bachelor. <br>
+            Vi har som formål å styrke det sosiale samholdet på et lite studie, samt holde arrangementer som alle klassetrinn kan være en del av. Et sentralt prosjekt er å jobbe mot en avgangsvisning der siste-års-studenter viser Bachelor-oppgavene sine. 
+
+        </p>
+    </div>
+
+    <div>
+        <h2 clas="medium_header">  OsloMet Gaming</h2>
+        <p>En studentforening for ALLE spillinteresserte i Oslo og omegn, hovedsakelig med fokus på det sosiale i dataspill, rollespill og brettspill med andre, på nett og fysisk. <br> 
+            OsloMet Gaming arrangerer arrangementer for alle med en interesse i spill, i Oslo og Omegn. Arrangementene tar sted jevnlig med 2-3 arrangement i måneden. Her kan interesserte folk komme og sosialisere eller bare slappe av med andre spillinteresserte! Hvert semester arrangerer vi også et LAN-party som går over en hel helg! Vi tilbyr tilgang til PC og konsoller, VR, kort- og brettspill og rollespill som DnD på alle våre arrangement! Målet er også å være en arena hvor studenter kan komme i kontakt med hverandre i forskjellige grupper, slik at felles interesser kan fremmes og alle kan inkluderes!
+        </p>
+    </div>
+
+    <div>
+        <h2 clas="medium_header"> Oslomet Tekniker Samfund </h2>
+        <p> edre studiehverdagen til studenter ved ingeniør-, teknologi- og datafag ved Oslomet. <br>
+            Oslo Tekniker Samfund - OTS er Oslomets største studentforening med ca 2400 studenter fra ingeniør-, teknologi- og datafag. Foreningen ble startet i 1912 da utdanningen het Kristiania Tekniske Mellomskole. OTS er en frivillig organisasjon som jobber for at medlemmene skal få en best mulig studiehverdag. Gjennom undergruppene tilbyr OTS velferdstilbud som OTS-kroa, fadderperiode, OTS-hytta, trimrom, jentegruppa, klatregruppe, bandrom, næringslivsdagene og Hemsedaltur. Foreningen fungerer også som et talerør til administrasjonen ved hjelp av tillitsvalgte som kan fronte eventuelle oppdukkende saker.
+        </p>
+        <!-- Påmelding skjema-->
+        <form action="action_page.php">
+            <div class="container">
+                <h1 class ="medium_header">Her er OsloMets foreninger!  </h1>
+                <p> Meld deg på en forening i dag:  </p>
+                <hr> <!-- For å lage horisontallinje -->
+    
+                <!-- Felt for navn -->
+                <lable for="name"> <b> Navn: </b></lable>
+                <input type="text" placeholder="Skriv inn navnet ditt: " name="name" id="name" required>
+    
+                <!-- Felt for e-post -->
+                <label for="email"><b>E-post</b></label>
+                <input type="text" placeholder="Skriv inn din e-post: " name="email" id="email" required>
+                
+                <!-- Avkrysningsbokser for foreninger -->
+                <p>Velg en forening du ønsker å melde deg på: </p>
+                 <hr>
+                 <lable for="Foreninger"> Foreninger: </lable>
+                 <select id="Velg" name="Velg">
+                    <option value="Fashion Production">Fashion Production</option>
+                    <option value="OsloMet Gaming">OsloMet Gaming</option>
+                    <option value="Oslo Tekniker Samfund ">Oslo Tekniker Samfund </option>
+                </select>
+                <hr>
+                <!-- Knapp for å sende påmelding -->
+                <button type="submit" class="registerbtn">Send påmelding</button>
+            </div>
+         </form>
+    </div>
+
+ <!--- fet for footer med kontakt info + kandidater-->
+    <div class="footer" id="footer">
+        <div id="footer_left">
+            <h3> Selskapetsinformasjon og kontaktopplysninger</h3>
+            <ul>
+                <li>Telefon: 67 23 60 00</li>
+                <li> Pilstredet 32 - 52 </li>
+                <li>Åpningstider: 08:00 - 15:00</li>
+                <li>Epost: Post@osloMet.no</li>
+            </ul>
+        </div>
+
+        <div id="footer_center">
+            <p>© 2023</p>
+        </div>
+        
+        <div id="footer_right">
+            <p> Kandidater: </p>
+            <ul>
+                <li>Kandidatnr: 244</li>
+                <li>Kandidatnr: 249</li>
+                <li>Kandidatnr: 227</li>
+                <li>Kandidatnr: 287</li>
+            </ul>
+        </div>
+    </div>   
+ </body>
+</html>
