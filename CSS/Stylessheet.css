@@ -119,6 +119,7 @@ body{
     margin: 10px auto;
  }
 
+
 /* kun for accesibility*/
 
 
@@ -182,8 +183,13 @@ hr{/* Overwrite default styles of hr */
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
     opacity: 0.9;
+    display: block; /* Legg til følgende regler for å sentrere knappen */
+    margin-left: auto;
+    margin-right: auto;
+
+    
 }
 .registerbtn:hover {
     opacity: 1;
@@ -209,17 +215,22 @@ a{ /* glemt passord*/ /* Styling for links */
 
 /* Styling for image containers  for oslomet foreninger*/ 
 .column {
-    float: left; 
-    width: 33.33%;
-    padding: 5px;
+    flex: 1; /* Fordeler plassen jevnt mellom kolonnene */
+    max-width: 33.33%;
+}
+
+.column img {
+    width: 100%; /* Sørger for at bildene tar 100% av bredden av kolonnen */
+    height: 100%; /* Beholder proporsjonene av bildet */
+    object-fit: cover; /* Skalerer bildet slik at det dekker hele området */
+    display: block; /* Fjerner ekstra mellomrom under bildene */
 }
 
 /* Clear floats after image containers for oslomet foreninger */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+.row {
+    display: flex;
 }
+
 
 /* Footer for  Kontakt info + kandidater*/
 .footer{
