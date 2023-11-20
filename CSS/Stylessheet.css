@@ -5,8 +5,9 @@ body{
     font-family: 'Times New Roman', Times, serif;
     background-color: #f4f4f4;
     margin: 0;
-
+    font-size: medium;
 }
+
 .main_heading{
     Text-align: center;
     font-size: 50px;
