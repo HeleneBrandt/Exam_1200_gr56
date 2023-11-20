@@ -1,0 +1,280 @@
+/* css for sammen sidene*/
+  /* overskrifter og tekster*/
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    margin: 0;
+
+}
+.main_heading{
+    Text-align: center;
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+}
+
+.text{
+    text-align: center;
+    padding: 0;
+}
+.medium_heading{
+    /* for underoverskrift (h2) */
+    text-align: center;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+}
+
+
+/* Navigasjonsnbar*/
+.navbar {
+    overflow: hidden;
+    background-color: #3081c4b8;
+    }
+    
+    .navbar a {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 16px 70px;
+    height: 100%;
+    font-size: medium;
+    box-sizing: border-box; /* legg til dette for å inkludere padding og border i elementets totale bredde og høyde */
+    }
+    
+    .navbar a:hover {
+    background-color: #d5d1cbc4;
+    color: black;
+    }
+
+/* Rullegardinen*/
+.dropdown { /* for dropdown/rullgardin meny*/
+    float: left;
+    overflow: relative;
+    }
+    
+    .dropdown .dropDownButton { /* innholdet i rullgardinen */
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.781);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    display: inline-block;
+    }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%; /* Endret bredden til 100% for å dekke hele siden */
+    padding: 12px 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 0; /* Justert posisjonen til venstre for å starte fra venstre side */
+    }
+    
+    .dropdown-content a {
+    color: black;
+    padding: 16px 100px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    }
+    
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+/* kun css for forside index.html*/
+
+.forside{}
+
+
+.overlay {
+    position: relative; /* Gjør overskriftsdiven absolutt posisjonert i forhold til .forside */
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7); /* Legg til en gjennomsiktig bakgrunn for bedre lesbarhet */
+    padding: 10px; /* Legg til padding for bedre utseende */
+ }
+
+.forside img{
+     max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    width: 100vw;/* Bruker viewport width for å fylle hele bredden av visningen */
+    display: block;
+    margin: 10px auto;
+ }
+
+/* kun for accesibility*/
+
+
+/* css kun for topical*/
+.text p {
+    margin: 5px 0; /* Juster avstanden mellom hver avsnitt */
+    }
+    
+    .text ul {
+    list-style: none;
+    padding: 0;
+    }
+    
+    .text li {
+    display: inline-block;
+    margin: 0 5px; /* Juster avstanden mellom hvert listeelement */
+    }
+    
+    .text li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+    }
+    
+    .text a {
+    display: inline-block;
+    }
+
+/* Oslomet Studentforeninger for Pålogginginfo for logg inn og påmeldingsskjema for foreninger*/
+
+.container{ /* Styling for container elements with padding */
+    padding: 16px;
+    width: 50%; /* Set width and center the container */
+    margin: auto; 
+}
+
+input[type=text], input[type=password]{/* Full-width input fields */
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus{ /* Input focus styles */
+    background-color: #ddd;
+    outline: none;
+}
+
+hr{/* Overwrite default styles of hr */
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn{ /* Styling for the submit/register button */
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.registerbtn:hover {
+    opacity: 1;
+}/* hvorfor denne her */
+
+a{ /* glemt passord*/ /* Styling for links */
+    color: rgb(30, 146, 255)
+}
+.signin{ /* styling for log inn delen*/
+    background-color: #f1f1f1;
+    text-align: center;
+}
+/* Styling for forgotten password link */
+.forgot-password {
+    color: blue; /* You can change the color as needed */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Styling for image containers  for oslomet foreninger*/ 
+.column {
+    float: left; 
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers for oslomet foreninger */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Footer for  Kontakt info + kandidater*/
+.footer {
+    bottom: 0;
+    display: flex;
+    background-color: #3081c4b8;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    justify-content: space-between; /* endre til center */
+    align-items: center;
+    align-content: center;
+    font-weight: bold
+}
+
+.footer_left{
+    width: 33%;
+    max-height: 100%;
+    font-size: 16px;
+    text-align: left
+}
+
+.footer_center{
+    width: 20%;
+    max-height: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer_right{
+    width: 33%;
+    max-height: 100%;
+    text-align: right;
+    font-size: 16px
+}
+
+.footer /* text*/ {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Endret fra space-between til center */
+    align-items: center;
+    text-align: center;
+}
+
+.footer p { /* for teksten i p i footer*/
+    margin: 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0
+}
+
+.footer li {
+    display: block;
+    margin: 0 5px;
+}
