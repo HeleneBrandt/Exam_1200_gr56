@@ -1,7 +1,4 @@
 /* css for sammen sidene*/
-
-
-
   /* overskrifter og tekster*/
 
 body {
@@ -26,7 +23,7 @@ body {
 .medium_heading {
     /* for underoverskrift (h2) */
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Times New Roman", Times, serif;
     color: black;
 }
@@ -344,3 +341,6 @@ a{ /* glemt passord*/ /* Styling for linker */
     display: flex;
 }
 
+.blue-button{
+    font-size: larger;
+}
