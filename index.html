@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <header id="forside">
+    <a tabindex="0" class="skip_to_content" href="#content">Skip to main content</a>
+    <header>
         <nav aria-label="Navigation" class="navbar">
             <a href="index.html">OsloMet: Introduksjon</a>
             <a href="subfolder/02Accessibility.html">Accessibility</a>
@@ -27,9 +28,10 @@
         </nav>
     </header>
 
-    <main id="content"> <!-- lagt til main for hovedinnhold main brukes bare en gang for hovedinnholdet -->
+    <main id="content"> <!-- lagt til main for hovedinnhold main brukes bare en gang for hovedinnholdet -- har ikke brukt id i main enda??  -->
  <!--- dette er kun for forsiden som skal brukes for css-->
-        <h1 class="main_heading">Oslomet: Introduksjon</h1>
+ <div id="forside">
+        <h1 tabindex="0" class="main_heading">Oslomet: Introduksjon</h1>
         <img src="./Img/Oslomet.jpg" alt="Studender foran Oslomet P32">
         <div class="overlay"> <!--- Denne er for skriften i teksten-->
 
@@ -43,7 +45,8 @@
             </p>
             <a href="Subfolder/04OsloMet.html" class="green-button"> Bli medlem i dag!</a>
         </div>
-    </main>
+ </div>
+   
 
     <form action="action_page.php" method="post">
         <div class="container">
@@ -67,6 +70,8 @@
             <p> Har du ikke en bruker? <a href="#"> Registrer deg </a>.</p>
         </div>
     </form>
+
+</main>
 
     
     <div class="footer" id="footer">
