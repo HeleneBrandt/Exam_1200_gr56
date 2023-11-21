@@ -32,7 +32,7 @@ body {
 
 
 /* Navigasjonsnbar*/
-.navbar {
+nav.navbar {
     overflow: hidden;
     background-color: #3081c4b8;
     }
@@ -50,7 +50,7 @@ body {
     box-sizing: border-box; /* legg til dette for å inkludere padding og border i elementets totale bredde og høyde */
     }
     
-    .navbar a:hover {
+    nav.navbar a:hover {
     background-color: #d5d1cbc4;
     color: black;
     }
