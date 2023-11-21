@@ -200,21 +200,21 @@ nav.navbar {
 
 /* css kun for topical*/
 
-.text p {
+#vesta p {
     margin: 5px 0; /* Juster avstanden mellom hver avsnitt */
     }
-    
-    .text ul {
+
+#vesta ul {
     list-style: none;
     padding: 0;
     }
     
-    .text li {
+#vesta li {
     display: inline-block;
     margin: 0 5px; /* Juster avstanden mellom hvert listeelement */
     }
     
-    .text li {
+#vesta li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,7 +222,7 @@ nav.navbar {
     margin: 10px 0;
     }
     
-    .text a {
+#vesta a {
     display: inline-block;
     }
     
