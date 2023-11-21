@@ -1,6 +1,7 @@
 /* css for sammen sidene*/
 
 
+
   /* overskrifter og tekster*/
 
 body {
@@ -159,9 +160,24 @@ nav.navbar {
     margin: 0;
     }
 
+/* skip to content hyper kobling */ 
+
+.skip_to_content {
+    position: absolute;
+    top: -400px;
+  }
+
+.skip_to_content:focus {
+    position: absolute;
+    top: 0;
+  }
+#content {
+??
+}
+
 /* kun css for forside index.html*/
 
-#content {
+#forside {
     position: relative; /* Gjør overskriftsdiven absolutt posisjonert i forhold til .forside */
     width: 100%;
     text-align: center;
@@ -169,7 +185,7 @@ nav.navbar {
     padding: 10px; /* Legg til padding for bedre utseende */
  }
 
-#content img{
+#forside img{
      max-width: 100%;
     height: 400px;
     object-fit: cover;
