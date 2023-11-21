@@ -161,7 +161,7 @@ nav.navbar {
 
 /* kun css for forside index.html*/
 
-.overlay {
+#content {
     position: relative; /* Gjør overskriftsdiven absolutt posisjonert i forhold til .forside */
     width: 100%;
     text-align: center;
@@ -169,7 +169,7 @@ nav.navbar {
     padding: 10px; /* Legg til padding for bedre utseende */
  }
 
-.forside img{
+#content img{
      max-width: 100%;
     height: 400px;
     object-fit: cover;
